@@ -3,4 +3,6 @@
 .DS_Store
 *bak
 .history
-.temp/**
+
+.fun/
+server.js
