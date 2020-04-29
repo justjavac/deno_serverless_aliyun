@@ -1,15 +1,14 @@
-/**
- * Every exported symbol ideally should have a documentation line.
- *
- * It is important that documentation is easily human readable,
- * but there is also a need to provide additional styling information to ensure
- * generated documentation is more rich text.
- * Therefore JSDoc should generally follow markdown markup to enrich the text.
- *
- * follow https://deno.land/std/style_guide.md
- *
- * @param foo - Description of non obvious parameter
- */
-export default function starter(foo: string): string {
-  return foo;
+import {
+  ServerRequest,
+  listenAndServe,
+} from "https://deno.land/std@v0.41.0/http/server.ts";
+
+async function handler(req: ServerRequest): Promise<void> {
+  const rid: string = req.headers.get("x-fc-request-id") ?? "unknow";
+  console.log(`FC Invoke Start RequestId: ${rid}`);
+  req.respond({ body: req.body });
 }
+
+const port = Deno.env("FC_SERVER_PORT") ?? "9000";
+listenAndServe(`:${port}`, handler);
+console.log("FunctionCompute Deno runtime inited.");

@@ -1,0 +1,16 @@
+.vscode
+.github
+.gitattributes
+.gitignore
+
+CHANGELOG.md
+LICENSE
+README.md
+
+.env
+.funignore
+template.yml
+
+Makefile
+mod_test.ts
+mod.ts
