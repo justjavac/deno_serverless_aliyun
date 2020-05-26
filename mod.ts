@@ -1,7 +1,7 @@
 import {
   ServerRequest,
   listenAndServe,
-} from "https://deno.land/std@v0.41.0/http/server.ts";
+} from "https://deno.land/std@v0.53.0/http/server.ts";
 
 async function handler(req: ServerRequest): Promise<void> {
   // 获取 request id
@@ -15,7 +15,7 @@ async function handler(req: ServerRequest): Promise<void> {
 }
 
 // 从环境变量获取端口号
-const port = Deno.env("FC_SERVER_PORT") ?? "9000";
+const port = Deno.env.get("FC_SERVER_PORT") ?? "9000";
 
 // 监听网络请求，并处理
 listenAndServe(`:${port}`, handler);

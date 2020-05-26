@@ -1,2 +1,2 @@
 #!/bin/bash
-deno -A server.js
+deno run -A --unstable server.js
