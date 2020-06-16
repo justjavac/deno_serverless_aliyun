@@ -1,7 +1,7 @@
 import {
   ServerRequest,
   listenAndServe,
-} from "https://deno.land/std@v0.53.0/http/server.ts";
+} from "https://deno.land/std@v0.57.0/http/server.ts";
 
 async function handler(req: ServerRequest): Promise<void> {
   // 获取 request id
