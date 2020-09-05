@@ -3,7 +3,7 @@
 [![tag](https://img.shields.io/github/release/justjavac/deno_serverless_aliyun)](https://github.com/justjavac/deno_serverless_aliyun/releases)
 [![Build Status](https://github.com/justjavac/deno_serverless_aliyun/workflows/ci/badge.svg?branch=master)](https://github.com/justjavac/deno_serverless_aliyun/actions)
 [![license](https://img.shields.io/github/license/justjavac/deno_serverless_aliyun)](https://github.com/justjavac/deno_serverless_aliyun/blob/master/LICENSE)
-[![](https://img.shields.io/badge/deno-v1.1.0-green.svg)](https://github.com/denoland/deno)
+[![](https://img.shields.io/badge/deno-v1.3-green.svg)](https://github.com/denoland/deno)
 
 Deno + Serverless = Awesome
 
