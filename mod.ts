@@ -1,9 +1,9 @@
 import {
-  ServerRequest,
   listenAndServe,
+  ServerRequest,
 } from "https://deno.land/std@0.82.0/http/server.ts";
 
-async function handler(req: ServerRequest): Promise<void> {
+function handler(req: ServerRequest): void {
   // 获取 request id
   const rid: string = req.headers.get("x-fc-request-id") ?? "unknow";
 
