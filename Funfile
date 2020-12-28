@@ -2,5 +2,5 @@ RUNTIME custom
 
 ENV DENO_INSTALL /code/.fun/deno/
 
-RUN curl -fsSL https://x.deno.js.cn/install.sh | sh -s v1.1.0 \
+RUN curl -fsSL https://x.deno.js.cn/install.sh | sh -s v1.6.2 \
     && echo "Deno was installed successfully."
