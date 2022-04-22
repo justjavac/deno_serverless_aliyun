@@ -1,0 +1,50 @@
+edition: 1.0.0
+name: transform_fun
+access: default
+
+vars:
+  region: cn-beijing
+  deno_version: v1.21.0
+
+services:
+  fc-deno_demo:
+    component: devsapp/fc
+    actions:
+      pre-deploy:
+        - run: deno task build
+          path: ./
+        - run: |
+            mkdir bin && \
+            curl --output ./bin/deno.zip https://dl.deno.js.cn/release/${vars.deno_version}/deno-x86_64-unknown-linux-gnu.zip && \
+            unzip -d ./bin -o ./bin/deno.zip && \
+            chmod +x ./bin/deno && \
+            rm ./bin/deno.zip
+          path: ./
+        - run: s build
+          path: ./
+      post-deploy:
+        - run: rm server.js
+          path: .
+        - run: rm -rf bin
+          path: .
+    props:
+      region: ${vars.region}
+      service:
+        name: deno_demo
+        description: helloworld
+        internetAccess: true
+      function:
+        name: fc_deno
+        handler: index.handler
+        memorySize: 512
+        runtime: custom
+        codeUri: ./
+        customRuntimeConfig:
+          command:
+            - ./bin/deno
+          args:
+            - run
+            - '--allow-net'
+            - '--allow-env'
+            - '--no-check'
+            - server.js

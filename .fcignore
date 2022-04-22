@@ -3,14 +3,14 @@
 .gitattributes
 .gitignore
 
-CHANGELOG.md
 LICENSE
 README.md
 
+s.yml
 .env
-.funignore
+.fcignore
 template.yml
+deno.json
 
-Makefile
 mod_test.ts
 mod.ts

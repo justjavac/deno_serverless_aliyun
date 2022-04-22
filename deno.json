@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env --allow-net mod.ts",
+    "build": "deno bundle mod.ts server.js"
+  },
+  "fmt": {
+    "files": {
+      "exclude": [".s", "server.js"]
+    }
+  }
+}
