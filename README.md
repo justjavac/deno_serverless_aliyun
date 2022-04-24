@@ -78,11 +78,11 @@ Hello World
 第一次运行时函数需要冷启，会稍微有点慢。
 
 ```plain
-Duration: 5.58 ms, Billed Duration: 100 ms, Memory Size: 512 MB, Max Memory Used: 9.10 MB
-Duration: 1.28 ms, Billed Duration: 100 ms, Memory Size: 512 MB, Max Memory Used: 9.19 MB
-Duration: 0.86 ms, Billed Duration: 100 ms, Memory Size: 512 MB, Max Memory Used: 9.96 MB
-Duration: 0.98 ms, Billed Duration: 100 ms, Memory Size: 512 MB, Max Memory Used: 9.96 MB
-Duration: 0.97 ms, Billed Duration: 100 ms, Memory Size: 512 MB, Max Memory Used: 9.96 MB
+Duration: 11.31 ms, Billed Duration: 12 ms, Memory Size: 512 MB, Max Memory Used: 41.50 MB
+Duration: 1.66 ms, Billed Duration: 2 ms, Memory Size: 512 MB, Max Memory Used: 41.62 MB
+Duration: 1.41 ms, Billed Duration: 2 ms, Memory Size: 512 MB, Max Memory Used: 41.87 MB
+Duration: 1.50 ms, Billed Duration: 2 ms, Memory Size: 512 MB, Max Memory Used: 42.25 MB
+Duration: 1.41 ms, Billed Duration: 2 ms, Memory Size: 512 MB, Max Memory Used: 42.50 MB
 ```
 
 ### 许可协议
