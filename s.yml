@@ -8,7 +8,7 @@ vars:
 
 services:
   fc-deno_demo:
-    component: devsapp/fc
+    component: fc
     actions:
       pre-deploy:
         - run: deno task build
