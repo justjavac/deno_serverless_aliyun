@@ -4,6 +4,9 @@
     "build": "deno bundle mod.ts server.js"
   },
   "fmt": {
+    "options": {
+      "lineWidth": 120
+    },
     "files": {
       "exclude": [".s", "server.js"]
     }

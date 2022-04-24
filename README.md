@@ -4,13 +4,11 @@ Deno + Serverless = Awesome
 
 ## 背景
 
-目前阿里云的函数计算服务只支持 Nodejs、Python、PHP、Java、.Net。本项目使用阿里云的 custom runtime 功能开发了可运行
-Deno 的 Serverless 环境。
+目前阿里云的函数计算服务只支持 Nodejs、Python、PHP、Java、.Net。本项目使用阿里云的 custom runtime 功能开发了可运行 Deno 的 Serverless 环境。
 
 ## 使用
 
-首先安装官方命令行工具
-[Serverless Devs](https://docs.serverless-devs.com/serverless-devs/install):
+首先安装官方命令行工具 [Serverless Devs](https://docs.serverless-devs.com/serverless-devs/install):
 
 ```shell
 npm install @serverless-devs/s -g
@@ -22,9 +20,8 @@ npm install @serverless-devs/s -g
 yarn global add @serverless-devs/s
 ```
 
-安装成功后运行
-[`s config`](https://docs.serverless-devs.com/serverless-devs/command/config) 配置
-Account ID、Access Key ID、Secret Access Key、Default Region Name。
+安装成功后运行 [`s config`](https://docs.serverless-devs.com/serverless-devs/command/config) 配置 Account ID、Access Key ID、Secret
+Access Key、Default Region Name。
 
 克隆（或下载）本仓库:
 
@@ -87,5 +84,5 @@ Duration: 1.41 ms, Billed Duration: 2 ms, Memory Size: 512 MB, Max Memory Used: 
 
 ### 许可协议
 
-[deno_serverless_aliyun](https://github.com/justjavac/deno_serverless_aliyun) 基于
-MIT 许可协议发布。详细信息可以查看 [LICENSE](./LICENSE) 文件。
+[deno_serverless_aliyun](https://github.com/justjavac/deno_serverless_aliyun) 基于 MIT 许可协议发布。详细信息可以查看
+[LICENSE](./LICENSE) 文件。
